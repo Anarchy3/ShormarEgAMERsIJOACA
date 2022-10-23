@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(24, 24, 24);
+    border-radius: 10px;
+}
+
+body{
+    margin: 0;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+header{
+    height: 60px;
+    background: linear-gradient(to right, rgb(9, 74, 187), rgb(15, 134, 199));
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 30px;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+header:hover{
+    background: linear-gradient(to right, rgb(9, 74, 187), rgb(126, 197, 236));
+}
+
+header a{
+    font-family: Bradley Hand, cursive !important;
+    color: rgb(253, 253, 253);
+    text-decoration: none;
+    transition: color 0.40s;
+}
+
+header a:hover{
+    text-decoration: underline;
+    color: rgb(225, 225, 225);
+}
+
+.container{
+    min-height: 100vh;
+    padding-top: 70px;
+}
+
+main{
+    margin: 10px 10% 20px 220px;
+    padding: 0px 25px;
+    cursor:default;
+}
+
+aside{
+    width: 190px;
+    height: 80vh;
+    position: fixed;
+    background: linear-gradient(to bottom, rgb(9, 74, 187), rgb(15, 134, 199));
+    padding-top: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+aside a{
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 35px;
+    font-family: cursive !important;
+    transition: color 0.40s;
+}
+
+aside a:hover{
+    text-decoration:underline;
+    color: rgb(220, 220, 220);
+}
+
+.logo{
+    margin-left: 5px;
+    font-size: 26px;
+}
+
+p {
+    line-height: 170%;
+    border-left: 6px solid #12bde0;
+    padding-left: 12px;
+}
+
+.row{
+    overflow: auto;
+}
+
+[class^="col-"]{
+    float: left;
+    padding: 5px;
+
+}
+
+.col-10{ width: 10%;}
+.col-20{ width: 20%;}
+.col-30{ width: 30%;}
+.col-40{ width: 40%;}
+.col-50{ width: 50%;}
+.col-60{ width: 60%;}
+.col-70{ width: 70%;}
+.col-80{ width: 80%;}
+.col-90{ width: 90%;}
+.col-100{ width: 100%;}
+
+.title{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    display: inline-block;
+    transition: border-bottom 0.10s;
+}
+
+.title:hover{
+    border-bottom: 4px solid #2365bb;
+}
+
+.title-LogSign{
+    position: absolute;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    display: inline-block;
+    transition: border-bottom 0.10s;
+    left: 37%;
+}
+
+.title-LogSign:hover{
+    border-bottom: 4px solid #2365bb;
+}
+
+.border{
+    position: absolute;
+    background: linear-gradient(to top, rgb(178, 191, 214), rgb(156, 207, 235));
+    width: 30%;
+    height: 600px;
+    border-radius: 10px;
+    opacity: 0.60;
+    transition: opacity 0.40s,
+    box-shadow 0.40s;
+    left: 36%;
+    top: 22%;
+    border: 2px solid rgb(7, 29, 83);
+}
+
+.border:hover{
+    opacity: 1.60;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.90);
+    background: linear-gradient(to bottom, rgb(157, 178, 214), rgb(156, 207, 235));
+}
+
+.border input{
+    border-radius: 10px;
+    border: none;
+    display: block;
+    width: 90%;
+    margin: 15px auto 0px auto;
+    resize: none;
+    font-family: inherit;
+    padding: 3px ;
+    font-size: 16px;
+    height: 30px;
+}
+
+.Sub-Btn{
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    width: 90px !important;
+    transition: color 0.40s,
+    background-color 0.40,
+    border-radius 0.40s;
+}
+
+.Sub-Btn:hover{
+    background-color: black;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.main-logsign{
+    display: block;
+}
+
+.Infoaboutus{
+    font-family: Bradley Hand, cursive !important;
+    position:absolute;
+    width: 35%;
+    height: 40%;
+    background-color: rgb(227, 227, 227);
+    border: 2px solid rgb(6, 185, 255);
+    border-radius: 10px;
+    opacity: 0.80;
+    transition: width 0.40s;
+    overflow-y: scroll;
+    color: black;
+}
+
+.Infoaboutus:hover{
+    width: 36%;
+}
+
+.textarea{
+    font-family: Bradley Hand, cursive !important;
+    position:absolute;
+    width: 40%;
+    height:60%;
+    background: linear-gradient(to top, rgb(9, 74, 187), rgb(15, 134, 199));
+    left: 45%;
+    border: 2px solid rgb(154, 154, 154);
+    border-radius: 10px;
+    transition: left 0.40s,
+    background 0.40s;
+}
+
+.textarea:hover{
+    left: 44%;
+    background: linear-gradient(to left, rgb(9, 74, 187), rgb(15, 134, 199));
+}
+
+.email{
+    font-family: Bradley Hand, cursive !important;
+    border:none;
+    position: absolute;
+    top:20%;
+    left:7px;
+    width: 35%;
+    height: 5%;
+    border-radius: 5px;
+}
+
+.name{
+    font-family: Bradley Hand, cursive !important;
+    border:none;
+    position: absolute;
+    top:29%;
+    left:7px;
+    width: 35%;
+    height: 5%;
+    border-radius: 5px;
+}
+
+.message{
+    font-family: Bradley Hand, cursive !important;
+    border:none;
+    position: absolute;
+    top:36%;
+    left:7px;
+    width:95%;
+    height:48%;
+    border-radius: 5px;
+}
+
+textarea{
+    font-family: Bradley Hand, cursive !important;
+    resize: none;
+    font-size: 30px;
+}
+
+.submitbtn{
+    position:absolute;
+    top: 91%;
+    left: 45%;
+    border:none;
+    border-radius: 10px;
+    padding:10px;
+    transition: background-color 0.40s,
+    color 0.40s;
+    background-color: #fff;
+}
+.submitbtn:hover{
+    background-color: #0c3364;
+    color: #fff;
+}
+
+.video{
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+}
+
+.Video{
+    border-radius: 10px;
+    border-bottom: 2px solid lightseagreen;
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.90);
+    transition: border-bottom 0.10s;
+}
+
+.Video:hover{
+    border-bottom: 0.20px solid lightseagreen;
+}
+
+.Userimage{
+    position: fixed;
+    width: 60px;
+    left: 92%;
+    top: 8%;
+    background-color:transparent;
+    transition: filter 0.40s;
+}
+
+.SignUpProfileName{
+    position: fixed;
+    left: 92%;
+    top: 12%;
+    border-bottom: 2px solid aqua;
+}
+
+ /* Numele contului dupa ce a fost creat */
+
+.ProfileButton{
+    position: fixed;
+    left: 91.70%;
+    top: 12.50%;
+    border-bottom: 2px solid aqua;
+}
+
+.Userimage:hover{
+    filter: drop-shadow(2px 2px 2px black);
+}
+
+.UserimageInPageUser{
+    width: 200px;
+    left: 20%;
+    top: 25%;
+    position: absolute;
+}
+
+.changeName{
+    width: 200px;
+    height: 30px;
+    border: 2px solid rgb(8, 179, 179);
+    border-radius: 10px;
+    left: 20%;
+    top: 50%;
+    position: absolute;
+}
+
+.oldpass{
+    width: 200px;
+    height: 30px;
+    border: 2px solid rgb(8, 179, 179);
+    border-radius: 10px;
+    left: 20%;
+    top: 60%;
+    position: absolute;
+}
+
+.newpass{
+    width: 200px;
+    height: 30px;
+    border: 2px solid rgb(8, 179, 179);
+    border-radius: 10px;
+    left: 20%;
+    top: 65%;
+    position: absolute;
+}
+
+.confirmnewpass{
+    width: 200px;
+    height: 30px;
+    border: 2px solid rgb(8, 179, 179);
+    border-radius: 10px;
+    left: 20%;
+    top: 70%;
+    position: absolute;
+}
+
+.ChangeApp{
+    width: 100px;
+    height: 30px;
+    border: 2px solid rgb(8, 179, 179);
+    border-radius: 10px;
+    left: 22.50%;
+    top: 75.50%;
+    position: absolute;
+    background-color: rgb(225, 225, 225);
+    font-family: sans-serif;
+    color: black;
+    transition: background-color 0.40s,
+    color 0.40s;
+}
+
+.ChangeApp:hover{
+    background-color: black;
+    color: #fff;
+}
+
+
+#menu-btn{
+    color: #fff;
+    font-size: 29px;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    display: none;
+}
+
+.show{
+    display: block !important;
+}
+
+.Error{
+    display: none;
+}
+
+.Phone{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .errorDiv{
+        display: none;
+    }
+    .Phone{
+        display: block;
+    }
+    /* body{
+        font-size: 16px;
+    }
+    [class^="col-"]{
+        width: 100%;
+    }
+    main{
+        margin: 0px;
+        padding: 10px 15px 20px 15px;
+    }
+    aside{
+        display: none;
+        height: auto;
+        width: 100%;
+        padding-top: 0px;
+        padding-bottom: 20px;
+        top: 70px;
+    }
+    #menu-btn{
+        display: block;
+    }
+    .main-logsign{
+        display: none;
+    } */
+    .Error{
+        display: block;
+        font-family: Bradley Hand, cursive !important;
+        left: 5%;
+        top: 20%;
+        background-color: rgb(214, 213, 213);
+        border-radius: 20px;
+        border: 2px solid red;
+        position: absolute;
+        padding: 5px;
+    }
+    .Error2{
+        display: block;
+        font-family: Bradley Hand, cursive !important;
+        left: 5%;
+        top: 40%;
+        background-color: rgb(251, 0, 0);
+        border-radius: 20px;
+        border: 2px solid rgb(0, 0, 0);
+        position: absolute;
+        padding: 5px;
+
+    }
+    /* .Infoaboutus{
+        left: 20%;
+        width: 63%;
+        position:absolute;
+        display: block;
+        overflow-y: scroll;
+    }
+    .Infoaboutus:hover{
+        width: 63%;
+    }
+    .textarea{
+        top: 70%;
+        left: 20%;
+
+        font-family: Bradley Hand, cursive !important;
+        position:absolute;
+        width: 63%;
+        height:60%;
+        background: linear-gradient(to top, rgb(9, 74, 187), rgb(15, 134, 199));
+        border: 2px solid rgb(154, 154, 154);
+        border-radius: 10px;
+    }
+    .textarea:hover{
+        left: 20%;
+    }
+    .video{
+        display: none;
+        position: absolute;
+        left: 00%;
+        bottom: 0%;
+    }
+    .Video{
+        display: none;
+        /* border-radius: 10px;
+        border-bottom: 2px solid lightseagreen;
+        box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.90);
+        transition: border-bottom 0.10s;
+        width: 400px; */
+    /* }
+    .Userimage{
+        left: 94%;
+        position: fixed;
+    }
+    .SignUpProfileName{
+        position: fixed;
+        left: 86%;
+        top: 12%;
+        border-bottom: 2px solid aqua;
+    }
+    .ProfileButton{
+        position: fixed;
+        left: 85%;
+        top: 12%;
+        border-bottom: 2px solid aqua;
+    }
+    .UserimageInPageUser{
+        top: 42%;
+    }
+    .changeName{
+        top: 70%;
+    }
+    .oldpass{
+        top: 80%;
+    }
+    .newpass{
+        top: 85%;
+    }
+    .confirmnewpass{
+        top: 90%;
+    }
+    .ChangeApp{
+        top: 95%;
+        left: 29.40%;
+    } * */
+}
